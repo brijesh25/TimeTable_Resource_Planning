@@ -1,0 +1,238 @@
+/*To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26 Mar, 2018, 11:40:15 PM
+    Author     : brije
+*/
+
+.menu{
+	padding: 0;
+	margin: 0;                       
+    /* margin-left: 1.05%; */
+	
+}
+
+.menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;	
+    border-left: 0.5px solid black;	 
+}
+
+.menu ul a{
+    text-decoration: none;
+}
+
+.menu ul li{
+	padding: 12px;
+	position: relative;
+	width: 200px;
+	vertical-align: middle;
+	background-color: #0288D1;			
+	border-top: 0.5px solid black; 
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+    text-decoration: none;
+    color: white;
+}
+
+
+.menu ul a li{
+    padding: 12px;
+    position: relative;
+    width: 200px;
+    vertical-align: middle;
+    background-color: #0288D1;          
+    border-top: 0.5px solid black; 
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li:hover{
+	background-color: #81D4FA;
+    display: block;
+    color: #01579B;
+    font-weight: bold;
+    font-family: red serifs;
+    text-decoration: none;
+}
+	
+.menu ul a li:hover{
+    background-color: #81D4FA;
+    display: block;
+    color: #01579B;
+    font-weight: bold;
+    font-family: red serifs;
+    text-decoration: none;
+}    
+
+.menu > ul > li{
+	 border-right: 5px solid #f1c40f;
+}
+
+.menu > ul > a > li{
+     border-right: 5px solid #f1c40f;
+}
+
+.menu ul ul{
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s;
+	position: absolute;
+	border-left: 4px solid #f1c40f;
+	left: 100%;
+	top: -2%; 
+}
+	
+.menu ul li:hover > ul {
+	opacity: 1;
+	visibility: visible;
+    border-left: 0;
+}
+
+.menu ul a li{
+	color: #fff;
+	text-decoration: none;
+    cursor: pointer;
+}
+
+.menu > ul > li> ul > a > li{
+    border-right: 4px solid #f1c40f;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.menu > ul > li:nth-of-type(2)::after{
+    position: absolute;
+    margin-left: 44%;
+    margin-top: -1%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu > ul > li:nth-of-type(5)::after{
+    position: absolute;
+    margin-left: 13%;
+    margin-top: -1%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu > ul > li:nth-of-type(6)::after{
+    position: absolute;
+    margin-left: 7%;
+    margin-top: -1%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+      
+.futuse{
+	border: 0;
+	width: 225px;
+	height: 55%;
+	border-left: 0.5px solid black;
+	border-top: 0.5px solid black;
+	background-color: #0288D1;	
+	border-right: 4px solid #f1c40f;
+}	
+	 
+.adminfutuse{
+    border: 0;
+    width: 225px;
+    height: 30%;
+    border-left: 0.5px solid black;
+    border-top: 0.5px solid black;
+    background-color: #0288D1;  
+    border-right: 4px solid #f1c40f;
+}   
+
+
+#men{
+    float: left;
+}
+
+                /* CSS of Right Side Navigation Bar */
+
+                .sidenav {
+                    height: 15.5%;
+                    width: 0;
+                    position: absolute;
+                    z-index: 1;
+                    top: 19%;
+                    right: 0.7%;
+                    overflow: hidden;
+                    background-color: #0288D1;
+                    overflow-x: hidden;
+                    transition: 0.5s;
+                    padding-top: 20px; 
+                }
+
+                .sidenav a {
+                    /*padding: 2px 2px 2px 2px;*/
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: white;
+                    display: block;
+                    transition: 0.3s;
+
+                }
+
+                .sidenav a:hover {
+                    color: #01579B;
+                }
+
+                .sidenav .closebtn {
+                    position: absolute;
+                    top: 0;
+                    right: 10px;
+                    font-size: 30px;
+                    margin-left: 20px;
+                }
+
+                .sidenav ul{
+                    list-style: none;
+                    padding-left: 1px;
+                    left: 0;
+                    overflow: hidden;
+                }
+
+                .sidenav a li{
+                    padding: 4px;
+                    background-color: #0288D1;          
+                    border-top: 0.5px solid black; 
+/*                  border-bottom: 0.5px solid black;
+*/                  text-decoration: none;
+                    color: white;
+                    padding-left: 15px;
+                }
+
+                .sidenav a li:hover{
+                    background-color: #81D4FA;
+                    display: block;
+                    color: #01579B;
+                    font-weight: bold;
+                    font-family: red serifs;
+                    text-decoration: none;
+                } 
+
+@media only screen and (max-height: 720px){
+	.adminfutuse{
+		height: 19%;
+	}
+	.futuse{
+		height: 45%;	
+	}
+	.sidenav{
+		top: 22.5%;
+		height: 17.5%;
+	}
+}				
